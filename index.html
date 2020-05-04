@@ -1,58 +1,20 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0NW5Z2MYC"></script>
-    <script>
+<!DOCTYPE html>
+<head>
+  <title>MNIST Digit Recognition Demonstration</title>
+  <link href="/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/css/app.css" rel="stylesheet" />
+  <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-H0NW5Z2MYC');
     </script>
-    <title>Digit Recognition WebApp</title>
-    <meta name="description" content="Simple Machine Learning Model into an WebApp using TensorFlow.js">
-    <meta name="keywords" content="Machine Learning, TensorFlow.js">
-    <meta name="author" content="Carlos Aguayo">
-    <style>
-      body {
-        touch-action: none; /*https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action*/
-        font-family: "Roboto";
-      }
-      h1 {
-        margin: 50px;
-        font-size: 70px;
-        text-align: center;
-      }
-      #paint {
-        border:3px solid red;
-        margin: auto;
-      }
-      #predicted { 
-        font-size: 60px;
-        margin-top: 60px;
-        text-align: center;
-      }
-      #number {
-        border: 3px solid black;
-        margin: auto;
-        margin-top: 30px;
-        text-align: center;
-        vertical-align: middle;
-      }
-      #clear {
-        margin: auto;
-        margin-top: 70px;
-        padding: 30px;
-        text-align: center;
-      }
-    </style>
-  </head>
+</head>
   <body>
-    <!--<script type="text/javascript" src="http://livejs.com/live.js"></script>-->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.5.2/dist/tf.min.js"></script>
-    <h1>Digit Recognition WebApp</h1>
+    <h1>MNIST Recognition Demonstration</h1>
     <div id="paint">
       <canvas id="myCanvas"></canvas>
     </div>
@@ -79,7 +41,6 @@
     cw = $('#number').width();
     $('#number').css({'height': cw + 'px'});
 
-    // From https://www.html5canvastutorials.com/labs/html5-canvas-paint-application/
     var canvas = document.getElementById('myCanvas');
     var context = canvas.getContext('2d');
 
@@ -169,4 +130,9 @@
     });
     </script>
   </body>
+  <footer class="footer">
+    <div class="container" style="font-family:'Courier New', monospace">
+      <span class="text-muted">Created by  <a href="mailto:nicholas.lunsford@westpoint.edu">Nicholas Lunsford</a>. Source code available in <a href="https://github.com/westpoint-neural-networks/homework-4">Github</a>.</span>
+    </div>
+  </footer>
 </html>
