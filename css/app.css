@@ -9,8 +9,7 @@ body {
   margin-top: 60px;
   margin-bottom: 60px;
   touch-action: none; /*https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action*/
-  font-family: "Roboto";
-  background-color: #ffff;
+  font-family: "Courier New";
 }
 
 h1 {

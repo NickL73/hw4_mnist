@@ -11,15 +11,17 @@
       gtag('config', 'G-H0NW5Z2MYC');
     </script>
 </head>
-  <body>
+  <body class="bg-dark text-black" style="background-color: #dae2f0;">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.5.2/dist/tf.min.js"></script>
-    <h1>MNIST Recognition Demonstration</h1>
+    <h1>MNIST Recognition Demonstration</h1><br>
+    <p class="card-text text-left" style="font-family:'Courier New', monospace">
+      This webapp will analyze and decide which number a user draws in the box below. The model was trained on the MNIST number image set, and uses the model architecture described in Francis Chollet's "Deep Learning with Python" (also available on the Keras documentation <a href="https://keras.io/examples/mnist_cnn/">here</a>). Use your mouse to click and draw an arabic digit below (0-9) and Keras will decide what you drew!.<br>
     <div id="paint">
       <canvas id="myCanvas"></canvas>
     </div>
     <div id="predicted">
-      Recognized digit
+      Predicted input digit
       <div id="number"></div>
       <button id="clear">Clear</button>
     </div>
