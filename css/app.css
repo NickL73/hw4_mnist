@@ -21,7 +21,6 @@ h3 {
 #paint {
   border:3px solid black;
   margin: auto;
-  float: left;
 }
 #predicted { 
   font-size: 60px;
