@@ -11,22 +11,22 @@
       gtag('config', 'G-H0NW5Z2MYC');
     </script>
 </head>
-
-<body class="bg-dark text-black" style="background-color: #dae2f0;">
-	<center>
-	<h3 class="card-title text-white" style="font-family:'Courier New', monospace">MNIST Digit Recognition Demonstration</h3><br>
-	<div class="card w-50 text-black" style="max-width: 700px;">
-		<div class="card-body">
-		<p class="card-text text-left" style="font-family:'Courier New', monospace"> This webapp will analyze and decide which number a user draws in the box below. The model was trained on the MNIST number image set, and uses the model architecture described in Francis Chollet's "Deep Learning with Python" (also available on the Keras documentation <a href="https://keras.io/examples/mnist_cnn/">here</a>).<br><br>
-		<p class="card-text text-left" style="font-family:'Courier New', monospace">Use your mouse to click and draw an arabic digit below (0-9) and Keras will decide what you drew!.<br>
-		</div>
-		<div id="paint">
-      		<canvas id="myCanvas"></canvas>
-    	</div>
-    	<div id="predicted">
-      		<p class="card-text text-left" style="font-family:'Courier New', monospace">Predicted input digit
-      	<div id="number"></div>
-      	<button id="clear">Clear</button>
+  <body class="bg-dark text-black" style="background-color: #dae2f0;">
+    <center>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.5.2/dist/tf.min.js"></script>
+    <h3 class="card-title text-white">MNIST Recognition Demonstration</h3><br>
+    <div class="card w-50 text-black" style="max-width: 700px;">
+      <div class="card-body">
+        <p class="card-text text-left" style="font-family:'Courier New', monospace">
+          This webapp will analyze and decide which number a user draws in the box below. The model was trained on the MNIST number image set, and uses the model architecture described in Francis Chollet's "Deep Learning with Python" (also available on the Keras documentation <a href="https://keras.io/examples/mnist_cnn/">here</a>). Use your mouse to click and draw an arabic digit below (0-9) and Keras will decide what you drew!.<br>
+    <div id="paint">
+      <canvas id="myCanvas"></canvas>
+    </div>
+    <div id="predicted">
+      Predicted input digit
+      <div id="number"></div>
+      <button id="clear">Clear</button>
     </div>
     <script>
     var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -134,11 +134,11 @@
       $('#number').html('');
     });
     </script>
-	</div>
-	<footer class="footer">
-    	<div class="container" style="font-family:'Courier New', monospace">
-      		<span class="text-muted">Created by  <a href="mailto:nicholas.lunsford@westpoint.edu">Nicholas Lunsford</a>. Source code available in <a href="https://github.com/westpoint-neural-networks/homework-4">Github</a>.</span>
-    	</div>
-  	</footer>
-	</center>
-</body>
+  </center>
+  </body>
+  <footer class="footer">
+    <div class="container" style="font-family:'Courier New', monospace">
+      <span class="text-muted">Created by  <a href="mailto:nicholas.lunsford@westpoint.edu">Nicholas Lunsford</a>. Source code available in <a href="https://github.com/westpoint-neural-networks/homework-4">Github</a>.</span>
+    </div>
+  </footer>
+</html>
