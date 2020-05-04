@@ -19,12 +19,14 @@ h3 {
 }
 
 #paint {
-        border:3px solid red;
-        margin: auto;
+  border:3px solid black;
+  margin: auto;
+  float: left;
 }
 #predicted { 
   font-size: 60px;
   margin-top: 60px;
+
   text-align: center;
 }
 #number {
